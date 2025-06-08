@@ -1,0 +1,7 @@
+.external-body {
+    display: flex;
+}
+.internal-body {
+    display: flex;
+    flex-direction: column;
+}

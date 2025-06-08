@@ -10,7 +10,7 @@
     }
     .context ul {
         list-style-type: none;
-    }
+    }/*  */
     .context ul li {
         padding: 10px;
         border-bottom: 1px solid #ccc;

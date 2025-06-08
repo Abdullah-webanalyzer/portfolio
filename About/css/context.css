@@ -1,11 +1,8 @@
 .context {
     background-color: lightgrey;
-    display: block;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     width: 250px;
-    height: 90%;
-    padding-top: 10%;
+    height: 170%;
 }
 .context ul {
     list-style-type: none;

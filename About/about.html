@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="css/navbar_styles.css">
-    <link rel="stylesheet" href="css/navbar_responsive.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/context.css"> <link rel="stylesheet" href="css/main_layout.css"> <link rel="stylesheet" href="css/content_container.css">
+    <link rel="stylesheet" href="css/context.css">
+    <link rel="stylesheet" href="css/content_container.css">
     <link rel="stylesheet" href="css/footer_styles.css">
 </head>
 <body>
@@ -27,26 +27,26 @@
             <li><a href="#">Blog</a></li>
         </ul>
     </nav>
-
-    <div class="context">
-        <ul>
-            <li><a href="#" data-target="about_me">About Me</a></li>
-            <li><a href="#" data-target="about_passion">About Passion</a></li>
-            <li><a href="#" data-target="about_studies">About Studies</a></li>
-            <li><a href="#" data-target="about_web">About Web</a></li>
-            <li><a href="#" data-target="about_goals">About Goals</a></li>
-            <li><a href="#" data-target="footer">Footer</a></li>
-        </ul>
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-popup" id="close-popup">&times;</button>
+            <h1>About Me</h1>
+            <p>Welcome to my personal page! Here you can learn more about my background, skills, and interests.</p>
+            <p>I am passionate about web development and design, and I love creating user-friendly interfaces.</p>
+            <p>Feel free to explore the rest of the site to see my work and get in touch!</p>
+        </div>
     </div>
 
-    <div class="main-layout-wrapper"> <div class="popup-overlay" id="popup-overlay">
-            <div class="popup-content">
-                <button class="close-popup" id="close-popup">&times;</button>
-                <h1>About Me</h1>
-                <p>Welcome to my personal page! Here you can learn more about my background, skills, and interests.</p>
-                <p>I am passionate about web development and design, and I love creating user-friendly interfaces.</p>
-                <p>Feel free to explore the rest of the site to see my work and get in touch!</p>
-            </div>
+    <div class="innternal-body">
+        <div class="context">
+            <ul>
+                <li><a href="#" data-target="about_me">About Me</a></li>
+                <li><a href="#" data-target="about_passion">About Passion</a></li>
+                <li><a href="#" data-target="about_studies">About Studies</a></li>
+                <li><a href="#" data-target="about_web">About Web</a></li>
+                <li><a href="#" data-target="about_goals">About Goals</a></li>
+                <li><a href="#" data-target="footer">Footer</a></li>
+            </ul>
         </div>
         <div class="content-container top-container">
             <div class="image-area">
@@ -87,7 +87,8 @@
                 <p>I aim to contribute to meaningful projects that make a positive impact on users and the community.</p>
             </div>
         </div>
-
+    </div>
+    <br>
         <footer class="site-footer" id="footer">
             <div class="footer-container">
                 <div class="footer-section footer-nav">
@@ -121,7 +122,10 @@
                 &copy; <span id="currentYear"></span> Your Company Name. All rights reserved.
             </div>
         </footer>
-    </div> <script src="js/footer_year.js"></script>
+     
+    
+    
+    <script src="js/footer_year.js"></script>
     <script src="js/navbar_hamburger.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/scroll_links.js"></script>

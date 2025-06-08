@@ -1,0 +1,69 @@
+/* css/content_container.css */
+.content-container {
+    display: flex;
+    align-items: top;
+    gap: 20px;
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto; /* Add this if you want to center content within the main-layout-wrapper */
+}
+
+.image-area {
+    flex: 1;
+    min-width: 200px;
+}
+
+.image-area img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-area {
+    flex: 2;
+}
+
+@media (max-width: 1280px) {
+    .content-container {
+        margin-left: 250px;
+    }
+    .top-container {
+        padding-top: 100px;
+    }
+    .image-area {
+        flex: 1;
+        /* Correcting the min/max width conflict. Decide which one is truly desired: */
+        min-width: 100px; /* Example: ensure min-width <= max-width */
+        max-width: 100px;
+    }
+    .text-area {
+        flex: 2;
+    }
+    .top-container:nth-child(2) h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-area {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 426px) {
+    .content-container {
+        flex-direction: column;
+        margin: 0px; /* Ensure margins are reset for small screens */
+        padding-top: 100px;
+        padding-left: 2px;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .image-area {
+        width: 300px; /* Careful with fixed width; prefer max-width: 100% */
+        height: 200px; /* Careful with fixed height; prefer height: auto; */
+        /* Better approach for images on small screens: */
+        max-width: 100%;
+        height: auto;
+    }
+}

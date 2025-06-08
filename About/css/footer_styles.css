@@ -1,0 +1,116 @@
+/* Main content area to push footer down */
+.main-content {
+    flex-grow: 1; /* Allows main content to take up available space */
+    padding: 2rem;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* Footer Styling */
+.site-footer {
+    margin-left: 250px;
+    max-width: auto;
+    background-color: #0f0e17; /* Darker background for the footer */
+    color: #f0f0f0;
+    border-top: 1px solid #2e2e4a; /* Subtle top border */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between;
+    gap: 2rem; /* Space between columns */
+}
+
+.footer-section {
+    flex: 1; /* Each section takes equal space */
+    min-width: 200px; /* Minimum width before wrapping */
+}
+
+.footer-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #e94560; /* Accent color */
+    border-radius: 2px;
+}
+
+/* Company Info */
+.footer-info p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #b0b0b0;
+}
+
+/* Navigation Links */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-nav ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* For transform effect */
+}
+
+.footer-nav ul li a:hover {
+    color: #e94560; /* Accent color on hover */
+    transform: translateX(5px); /* Slight slide effect */
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e4a; /* Background for social icons */
+}
+
+.social-links a:hover {
+    color: #e94560;
+    transform: translateY(-5px) scale(1.1); /* Lift and grow effect */
+}
+
+/* Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #2e2e4a;
+    font-size: 0.85rem;
+    color: #808080;
+}

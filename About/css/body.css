@@ -1,0 +1,13 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0px;
+    color: #333;
+    display: flex; /* Enable Flexbox for direct children of body */
+    flex-direction: column; /* Stack children (navbar, main-layout-wrapper) vertically */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+body::-webkit-scrollbar {
+    display: none;
+}

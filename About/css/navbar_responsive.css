@@ -1,0 +1,54 @@
+@media (max-width: 1024px) {
+    .nav-links li {
+    margin-left: 3rem; /* Spacing between links */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        justify-content: space-between; /* Keep space between brand and links */
+        max-width: 95%;
+    }
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+    .nav-links li {
+        margin: 0.75rem 0; /* Vertical spacing for mobile links */
+    }
+    .hamburger {
+        display: flex; /* Show hamburger icon on small screens and use flexbox for bars */
+    }
+}
+@media (max-width: 426px) {
+    .navbar {
+        padding: 1rem;
+        justify-content: space-between; /* Keep space between brand and links */
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 376px) {
+    .navbar {
+        padding: 1rem;
+        justify-content: space-between; /* Keep space between brand and links */
+        max-width: 95%;
+    }
+}
+
+
+@media (max-width: 321px) {
+    .navbar {
+        padding: 1rem;
+        justify-content: space-between; /* Keep space between brand and links */
+        max-width: 95%;
+    }
+}
+

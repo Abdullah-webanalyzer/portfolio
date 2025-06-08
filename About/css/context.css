@@ -1,0 +1,25 @@
+@media screen and (max-width: 1400px) {
+    .context {
+        background-color: lightgrey;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 250px;
+        height: 90%;
+        padding-top: 10%;
+    }
+    .context ul {
+        list-style-type: none;
+    }
+    .context ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .context {
+        display:none;
+        width: 250px;
+    }
+}

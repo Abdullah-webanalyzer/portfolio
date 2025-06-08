@@ -1,5 +1,6 @@
 /* css/content_container.css */
 .content-container {
+    margin-left: 250px;
     display: flex;
     align-items: top;
     gap: 20px;
@@ -11,6 +12,7 @@
 .image-area {
     flex: 1;
     min-width: 200px;
+    max-width: 200px;
 }
 
 .image-area img {
@@ -22,48 +24,9 @@
 .text-area {
     flex: 2;
 }
-
-@media (max-width: 1280px) {
-    .content-container {
-        margin-left: 250px;
-    }
-    .top-container {
-        padding-top: 100px;
-    }
-    .image-area {
-        flex: 1;
-        /* Correcting the min/max width conflict. Decide which one is truly desired: */
-        min-width: 100px; /* Example: ensure min-width <= max-width */
-        max-width: 100px;
-    }
-    .text-area {
-        flex: 2;
-    }
-    .top-container:nth-child(2) h1 {
-        font-size: 1.5rem;
-    }
+.top-container {
+    padding-top: 100px;
 }
-
-@media (max-width: 768px) {
-    .image-area {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 426px) {
-    .content-container {
-        flex-direction: column;
-        margin: 0px; /* Ensure margins are reset for small screens */
-        padding-top: 100px;
-        padding-left: 2px;
-        padding-right: 0;
-        padding-bottom: 0;
-    }
-    .image-area {
-        width: 300px; /* Careful with fixed width; prefer max-width: 100% */
-        height: 200px; /* Careful with fixed height; prefer height: auto; */
-        /* Better approach for images on small screens: */
-        max-width: 100%;
-        height: auto;
-    }
+.top-container:nth-child(2) h1 {
+    font-size: 1.5rem;
 }

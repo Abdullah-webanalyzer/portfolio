@@ -1,14 +1,5 @@
-/* Main content area to push footer down */
-.main-content {
-    flex-grow: 1; /* Allows main content to take up available space */
-    padding: 2rem;
-    text-align: center;
-    color: #f0f0f0;
-}
-
-/* Footer Styling */
 .site-footer {
-    max-width: auto;
+    flex-shrink: 0;
     background-color: #0f0e17; /* Darker background for the footer */
     color: #f0f0f0;
     border-top: 1px solid #2e2e4a; /* Subtle top border */

@@ -1,17 +1,16 @@
 
 .content-container {
-    margin-left: 250px;
     display: flex;
-    align-items: top;
+    align-items: flex-start;
     gap: 20px;
     padding: 20px;
     max-width: 960px;
+    margin: 0 auto;
 }
 
 .image-area {
-    flex: 1;
-    min-width: 200px;
-    max-width: 200px;
+    width: 200px;
+    flex-shrink: 0; 
 }
 
 .image-area img {
@@ -21,10 +20,10 @@
 }
 
 .text-area {
-    flex: 2;
+    flex: 1;
 }
 .top-container {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 .top-container:nth-child(2) h1 {
     font-size: 1.5rem;

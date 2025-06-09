@@ -1,8 +1,6 @@
-body {
-    margin: 0px;
-    padding: 0px;
-}
+
 .navbar {
+    flex-shrink: 0;
     position: fixed; /* Fixed position to stay at the top */
     width: 100%; 
     background-color: #1a202c; /* Dark background for the navbar */

@@ -1,19 +1,23 @@
+
 .context {
     background-color: lightgrey;
     width: 250px;
     flex-shrink: 0;
     box-sizing: border-box; /* Ensures padding is included in the 250px width */
 }
-.context ul {
+.context-main {
+    position: fixed;
+}
+.context-main ul {
     list-style-type: none;
     padding: 0; 
     margin: 0;
 }/*  */
-.context ul li {
+.context-main ul li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
-.context ul li:last-child {
+.context-main ul li:last-child {
     border-bottom: none; 
 }
 
